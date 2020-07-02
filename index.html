@@ -15,7 +15,7 @@
 
 
     <script>
-        var firebaseConfig = {
+        var config = {
             apiKey: "AIzaSyCbobZP97XkiSWBHcO_05B0ssefbcGIdCg",
             authDomain: "ninja-firestore-tut-278bd.firebaseapp.com",
             databaseURL: "https://ninja-firestore-tut-278bd.firebaseio.com",
@@ -24,9 +24,9 @@
             messagingSenderId: "511949304013",
             appId: "1:511949304013:web:66daa71e2d5f15ab6af984"
         };
-        firebase.initializeApp(firebaseConfig);
+        firebase.initializeApp(config);
         const db = firebase.firestore();
-        bd.settings({ timestampInSnapshots: true });
+        db.settings({ timestampsInSnapshots: true }); 
     </script>
     <script src="app.js"></script>
 </body>
